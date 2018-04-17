@@ -32,7 +32,7 @@ Open a terminal window and run the following commands
 ```
 cd ~/catkin_ws
 source devel/setup.bash
-roslaunch simple_walker simple_walker.launch
+roslaunch turtlebot_spawn turtlebot_gmap.launch
 ```
 This launches the gazebo environment. Meanwhile, the program expects the user to input the full path name to the directory the velocity .csv files. Once entered, the program reads the .csv file and publishes them to the turtlebot.
 
