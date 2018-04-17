@@ -38,6 +38,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <string>
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
 #include "std_srvs/Empty.h"
@@ -47,9 +48,15 @@
 int main(int argc, char **argv) {
   // initializing a ros node called walker
   ros::init(argc, argv, "walker");
-  
+  // creating a node handle
+  ros::NodeHandle n;
+  ROS_INFO("A* Turtlebot Navigation");
+  ros::Duration(2).sleep();
+  std::string pathName;
+  std::cout << "Enter the full path name to access velocity .csv files : ";
+  std::cin >> pathName;
   std::ifstream lookuptable;
-  lookuptable.open("/home/harish/turtlebot_gmap/src/turtlebot_spawn/PathVelocity.csv");
+  lookuptable.open(pathName);
   std::vector<std::vector<int>> vel;
   std::string row, column;
   while (std::getline(lookuptable, row)) {
@@ -62,11 +69,8 @@ int main(int argc, char **argv) {
       temp.push_back(val);
     }
     vel.push_back(temp);
-    std::cout << "HERE" << std::endl; 
   }
-
-  // creating a node handle
-  ros::NodeHandle n;
+ 
   geometry_msgs::Pose start_pose;
   start_pose.position.x = -10.0;
   start_pose.position.y = 2.0;
