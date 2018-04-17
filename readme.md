@@ -22,7 +22,7 @@ cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
 cd src
-git clone https://github.com/harish1696/Simplewalker-bot.git
+git clone https://github.com/harish1696/turtlebot-Astar
 cd ..
 catkin_make
 ```
