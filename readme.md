@@ -6,7 +6,6 @@ The module is capable of reading the velocity from the csv files and publishing 
 ![screenshot from 2018-04-17 09-41-25](https://user-images.githubusercontent.com/13302860/38873361-935a8fc4-4223-11e8-9068-e4cfa93324d7.png)
 
 ## Installing Dependencies
-## Dependencies
 This program works on a device running Ubuntu 16.04 and ROS Kinetic Kame.
 
 To install ROS Kinetic Kame in Ubuntu 16.04, follow the steps in this [link](http://wiki.ros.org/kinetic/Installation/Ubuntu).
