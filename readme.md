@@ -3,6 +3,7 @@
 
 ## Overview
 The module is capable of reading the velocity from the csv files and publishing it to the turtlebot in gazebo. The velocities in the .csv files are obtained using A* path planning.
+![screenshot from 2018-04-17 09-41-25](https://user-images.githubusercontent.com/13302860/38873361-935a8fc4-4223-11e8-9068-e4cfa93324d7.png)
 
 ## Installing Dependencies
 ## Dependencies
